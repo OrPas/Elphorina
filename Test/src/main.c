@@ -9,11 +9,13 @@ int main(void)
         int a = 0;
 	int x = 0;
 	int key;
+	int inAnimation = 0;
 	int marche = 0;
 	int timeout = 1;
 
 	while(a != 1)
 	{
+
 
 		        /* Affichage */
 	   	dclear(C_WHITE);
@@ -21,21 +23,30 @@ int main(void)
                 dupdate();
 
                 /* Réinitialisation des infos du frame précédent */
-	        marche = 0;
-
+	        if(marche > 0)
+		{
+			marche--;
+		}
 	       /* Lecture des entrées */
 	       key = getkey_opt(GETKEY_DEFAULT, &timeout).key;
 	       if(key == KEY_EXE)
                        a = 1;
 	       if(key == KEY_RIGHT)
-		       marche = 1;
-
+	       {
+		       marche = 5;
+	               inAnimation = 1;
+               }
 	       /* Simulation du monde */
-	       if(marche)
-		       x = x+1;
-
+	       if(marche==0 && inAnimation == 1)
+	       {
+		       x = x+3;
+	               inAnimation = 0;
+               }
 	       /* Délai */
 	       sleep_us(25000);
+	       if(x >= 140)
+		       x = 0;
+	       
 	}
 	getkey();
 	return 1;

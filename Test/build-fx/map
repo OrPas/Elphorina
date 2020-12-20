@@ -167,9 +167,9 @@ LOAD /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a
 LOAD /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a
 LOAD /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a
                 0x0000000000300000                _brom = 0x300000
-                0x0000000000005638                _srom = ((((0x200 + SIZEOF (.text)) + SIZEOF (.rodata)) + SIZEOF (.gint.drivers)) + SIZEOF (.gint.blocks))
+                0x0000000000005658                _srom = ((((0x200 + SIZEOF (.text)) + SIZEOF (.rodata)) + SIZEOF (.gint.drivers)) + SIZEOF (.gint.blocks))
 
-.text           0x0000000000300200     0x4908
+.text           0x0000000000300200     0x4928
  *(.text.entry)
  .text.entry    0x0000000000300200      0x1ac /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(start.c.o)
                 0x0000000000300200                _start
@@ -192,256 +192,256 @@ LOAD /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a
                 0x0000000000000070                _gint_tlbh_size = ABSOLUTE ((. - _gint_tlbh_start))
  *(.text .text.*)
  .text          0x00000000003004b0        0x0 build-fx/src/main.c.o
- .text.startup  0x00000000003004b0       0x9c build-fx/src/main.c.o
+ .text.startup  0x00000000003004b0       0xbc build-fx/src/main.c.o
                 0x00000000003004b0                _main
- .text          0x000000000030054c       0x3c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(start.c.o)
-                0x000000000030057c                _gint_setrestart
- .text          0x0000000000300588      0x29c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(getkey.c.o)
-                0x0000000000300588                _getkey_opt
-                0x00000000003007d0                _getkey
-                0x00000000003007dc                _getkey_repeat
-                0x0000000000300818                _getkey_repeat_filter
- .text          0x0000000000300824      0x444 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(keysc.c.o)
-                0x0000000000300a1c                _pollevent
-                0x0000000000300b58                _waitevent
-                0x0000000000300ba4                _clearevents
-                0x0000000000300bc4                _keydown
-                0x0000000000300bf0                _keydown_all
-                0x0000000000300c2c                _keydown_any
- .text          0x0000000000300c68       0x30 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dimage.c.o)
-                0x0000000000300c68                _dimage
- .text          0x0000000000300c98       0x64 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dclear.c.o)
-                0x0000000000300c98                _dclear
- .text          0x0000000000300cfc       0xc8 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dsubimage.c.o)
-                0x0000000000300cfc                _dsubimage
- .text          0x0000000000300dc4       0x3c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dupdate.c.o)
-                0x0000000000300dc4                _dupdate
- .text          0x0000000000300e00      0x240 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(t6k11.c.o)
-                0x0000000000300e78                _t6k11_display_v1
-                0x0000000000300f1c                _t6k11_display_v2
-                0x0000000000300fb4                _t6k11_display
-                0x0000000000300fd8                _t6k11_contrast
-                0x0000000000301000                _t6k11_backlight
- .text          0x0000000000301040       0x48 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(sleep.c.o)
-                0x0000000000301040                _sleep_us
- .text          0x0000000000301088      0x7b0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(tmu.c.o)
-                0x00000000003013dc                _timer_delay
-                0x0000000000301488                _timer_setup
-                0x0000000000301698                _timer_start
-                0x00000000003016d0                _timer_reload
-                0x0000000000301708                _timer_pause
-                0x0000000000301744                _timer_stop
-                0x00000000003017c0                _timer_wait
-                0x0000000000301828                _timer_timeout
- .text          0x0000000000301838      0x178 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(cpg.c.o)
-                0x00000000003019a4                _clock_freq
- .text          0x00000000003019b0      0x1a0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(intc.c.o)
-                0x0000000000301a9c                _intc_priority
- .text          0x0000000000301b50       0xec /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(hardware.c.o)
-                0x0000000000301b50                _hw_detect
- .text          0x0000000000301c3c      0x39c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(kernel.c.o)
-                0x0000000000301e58                _kinit
-                0x0000000000301f00                _gint_inthandler
-                0x0000000000301f60                _gint_switch
-                0x0000000000301fb0                _kquit
- .text          0x0000000000301fd8      0x2ec /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(mmu.c.o)
-                0x0000000000301fd8                _tlb_addr
-                0x0000000000301fec                _tlb_data
-                0x0000000000302000                _tlb_mapped_memory
-                0x00000000003020cc                _tlb_translate
-                0x000000000030214c                _utlb_addr
-                0x000000000030215c                _utlb_data
-                0x000000000030216c                _utlb_mapped_memory
-                0x000000000030223c                _utlb_translate
-                0x0000000000302288                _mmu_translate
-                0x00000000003022a4                _mmu_uram
- .text          0x00000000003022c4       0xbc /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(osmenu.c.o)
-                0x0000000000302370                _gint_osmenu
- .text          0x0000000000302380      0x170 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(syscalls.S.o)
-                0x0000000000302380                _malloc
-                0x0000000000302394                _free
-                0x00000000003023a4                _calloc
-                0x00000000003023b4                _realloc
-                0x00000000003023c4                _BFile_Remove
-                0x00000000003023d4                _BFile_Create
-                0x00000000003023e4                _BFile_Open
-                0x00000000003023f4                _BFile_Close
-                0x0000000000302404                _BFile_Size
-                0x0000000000302414                _BFile_Write
-                0x0000000000302424                _BFile_Read
-                0x0000000000302434                _BFile_FindFirst
-                0x0000000000302444                _BFile_FindNext
-                0x0000000000302454                _BFile_FindClose
-                0x0000000000302464                ___Timer_Install
-                0x0000000000302474                ___Timer_Start
-                0x0000000000302484                ___Timer_Stop
-                0x0000000000302494                ___Timer_Deinstall
-                0x00000000003024a4                ___PutKeyCode
-                0x00000000003024b4                ___GetKeyWait
-                0x00000000003024c4                ___ClearKeyBuffer
-                0x00000000003024d4                ___GetVRAMAddress
- .text          0x00000000003024f0        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(tlbh.S.o)
- .text          0x00000000003024f0      0x124 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(iokbd.c.o)
-                0x00000000003024fc                _iokbd_row
-                0x00000000003025e4                _iokbd_scan
- .text          0x0000000000302614      0x52c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti.c.o)
-                0x0000000000302614                _bopti_grid
-                0x000000000030284c                _bopti_render
-                0x000000000030299c                _bopti_render_scsp
-                0x0000000000302a9c                _bopti_clip
- .text          0x0000000000302b40       0x8c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(masks.c.o)
-                0x0000000000302b40                _masks
- *fill*         0x0000000000302bcc        0x4 
- .text          0x0000000000302bd0       0xc0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(memcpy.s.o)
-                0x0000000000302bd0                _memcpy
- .text          0x0000000000302c90        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth-etmu.s.o)
- .text          0x0000000000302c90        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth-tmu.s.o)
- .text          0x0000000000302c90       0x30 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(cpu.s.o)
-                0x0000000000302c90                _cpu_setCPUOPM
-                0x0000000000302ca2                _cpu_getCPUOPM
-                0x0000000000302cb4                _cpu_getSR
-                0x0000000000302cba                _cpu_setSR
- .text          0x0000000000302cc0        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(exch.s.o)
- .text          0x0000000000302cc0        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth.S.o)
- .text          0x0000000000302cc0       0x88 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti-asm-gray-scsp.s.o)
-                0x0000000000302cc0                _bopti_gasm_mono_scsp
-                0x0000000000302cdc                _bopti_gasm_mono_alpha_scsp
-                0x0000000000302cfe                _bopti_gasm_gray_scsp
-                0x0000000000302d20                _bopti_gasm_gray_alpha_scsp
- *fill*         0x0000000000302d48        0x8 
- .text          0x0000000000302d50      0x150 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti-asm-gray.s.o)
-                0x0000000000302d50                _bopti_gasm_mono
-                0x0000000000302d8c                _bopti_gasm_mono_alpha
-                0x0000000000302ddc                _bopti_gasm_gray
-                0x0000000000302e30                _bopti_gasm_gray_alpha
- .text          0x0000000000302ea0       0x2a /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti-asm-mono-scsp.s.o)
-                0x0000000000302ea0                _bopti_asm_mono_scsp
-                0x0000000000302eb2                _bopti_asm_mono_alpha_scsp
- .text          0x0000000000302eca       0x58 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti-asm.s.o)
-                0x0000000000302eca                _bopti_asm_mono
-                0x0000000000302ef0                _bopti_asm_mono_alpha
- *fill*         0x0000000000302f22        0x2 
- .text          0x0000000000302f24      0x1ec /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(exch.c.o)
-                0x00000000003030d4                _gint_panic
-                0x00000000003030e4                _gint_panic_set
-                0x00000000003030f8                _gint_exc_catch
-                0x0000000000303104                _gint_exc_skip
- .text          0x0000000000303110       0xbc /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dprint.c.o)
-                0x0000000000303110                _dprint_opt
-                0x000000000030317c                _dprint
- .text          0x00000000003031cc       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dtext.c.o)
-                0x00000000003031cc                _dtext
- .text          0x00000000003031ec      0x208 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(topti.c.o)
-                0x00000000003031ec                _dfont
-                0x0000000000303204                _topti_glyph_index
-                0x000000000030324c                _topti_offset
-                0x00000000003032a8                _topti_utf8_next
-                0x0000000000303356                _dsize
- .text          0x00000000003033f4      0x3a4 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(topti.c.o)
-                0x0000000000303496                _topti_render
-                0x00000000003036bc                _dtext_opt
- .text          0x0000000000303798      0xcec /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(stdio.c.o)
-                0x0000000000304194                _kprint_opt
-                0x00000000003042dc                _kprint
-                0x00000000003043bc                _kvsprint
-                0x0000000000304404                _sprintf
-                0x000000000030442c                _vsprintf
-                0x000000000030444c                _snprintf
-                0x000000000030446c                _vsnprintf
- .text          0x0000000000304484        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(font5x7.png.o)
- *fill*         0x0000000000304484        0xc 
- .text          0x0000000000304490      0x130 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(topti-asm.s.o)
-                0x00000000003045a0                _topti_asm_text
- .text          0x00000000003045c0       0x56 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(memset.s.o)
-                0x00000000003045c0                _memset
- *fill*         0x0000000000304616        0x2 
- .text          0x0000000000304618      0x1f0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_udivdi3.o)
-                0x0000000000304618                ___udivdi3
- .text          0x0000000000304808      0x234 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_umoddi3.o)
-                0x0000000000304808                ___umoddi3
- .text          0x0000000000304a3c       0x6c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_udivsi3.o)
-                0x0000000000304a5e                ___udivsi3
- .text          0x0000000000304aa8       0x60 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_udiv_qrnnd_16.o)
-                0x0000000000304aa8                ___udiv_qrnnd_16
- .text          0x0000000000304b08        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_clz.o)
+ .text          0x000000000030056c       0x3c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(start.c.o)
+                0x000000000030059c                _gint_setrestart
+ .text          0x00000000003005a8      0x29c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(getkey.c.o)
+                0x00000000003005a8                _getkey_opt
+                0x00000000003007f0                _getkey
+                0x00000000003007fc                _getkey_repeat
+                0x0000000000300838                _getkey_repeat_filter
+ .text          0x0000000000300844      0x444 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(keysc.c.o)
+                0x0000000000300a3c                _pollevent
+                0x0000000000300b78                _waitevent
+                0x0000000000300bc4                _clearevents
+                0x0000000000300be4                _keydown
+                0x0000000000300c10                _keydown_all
+                0x0000000000300c4c                _keydown_any
+ .text          0x0000000000300c88       0x30 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dimage.c.o)
+                0x0000000000300c88                _dimage
+ .text          0x0000000000300cb8       0x64 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dclear.c.o)
+                0x0000000000300cb8                _dclear
+ .text          0x0000000000300d1c       0xc8 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dsubimage.c.o)
+                0x0000000000300d1c                _dsubimage
+ .text          0x0000000000300de4       0x3c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dupdate.c.o)
+                0x0000000000300de4                _dupdate
+ .text          0x0000000000300e20      0x240 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(t6k11.c.o)
+                0x0000000000300e98                _t6k11_display_v1
+                0x0000000000300f3c                _t6k11_display_v2
+                0x0000000000300fd4                _t6k11_display
+                0x0000000000300ff8                _t6k11_contrast
+                0x0000000000301020                _t6k11_backlight
+ .text          0x0000000000301060       0x48 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(sleep.c.o)
+                0x0000000000301060                _sleep_us
+ .text          0x00000000003010a8      0x7b0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(tmu.c.o)
+                0x00000000003013fc                _timer_delay
+                0x00000000003014a8                _timer_setup
+                0x00000000003016b8                _timer_start
+                0x00000000003016f0                _timer_reload
+                0x0000000000301728                _timer_pause
+                0x0000000000301764                _timer_stop
+                0x00000000003017e0                _timer_wait
+                0x0000000000301848                _timer_timeout
+ .text          0x0000000000301858      0x178 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(cpg.c.o)
+                0x00000000003019c4                _clock_freq
+ .text          0x00000000003019d0      0x1a0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(intc.c.o)
+                0x0000000000301abc                _intc_priority
+ .text          0x0000000000301b70       0xec /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(hardware.c.o)
+                0x0000000000301b70                _hw_detect
+ .text          0x0000000000301c5c      0x39c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(kernel.c.o)
+                0x0000000000301e78                _kinit
+                0x0000000000301f20                _gint_inthandler
+                0x0000000000301f80                _gint_switch
+                0x0000000000301fd0                _kquit
+ .text          0x0000000000301ff8      0x2ec /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(mmu.c.o)
+                0x0000000000301ff8                _tlb_addr
+                0x000000000030200c                _tlb_data
+                0x0000000000302020                _tlb_mapped_memory
+                0x00000000003020ec                _tlb_translate
+                0x000000000030216c                _utlb_addr
+                0x000000000030217c                _utlb_data
+                0x000000000030218c                _utlb_mapped_memory
+                0x000000000030225c                _utlb_translate
+                0x00000000003022a8                _mmu_translate
+                0x00000000003022c4                _mmu_uram
+ .text          0x00000000003022e4       0xbc /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(osmenu.c.o)
+                0x0000000000302390                _gint_osmenu
+ .text          0x00000000003023a0      0x170 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(syscalls.S.o)
+                0x00000000003023a0                _malloc
+                0x00000000003023b4                _free
+                0x00000000003023c4                _calloc
+                0x00000000003023d4                _realloc
+                0x00000000003023e4                _BFile_Remove
+                0x00000000003023f4                _BFile_Create
+                0x0000000000302404                _BFile_Open
+                0x0000000000302414                _BFile_Close
+                0x0000000000302424                _BFile_Size
+                0x0000000000302434                _BFile_Write
+                0x0000000000302444                _BFile_Read
+                0x0000000000302454                _BFile_FindFirst
+                0x0000000000302464                _BFile_FindNext
+                0x0000000000302474                _BFile_FindClose
+                0x0000000000302484                ___Timer_Install
+                0x0000000000302494                ___Timer_Start
+                0x00000000003024a4                ___Timer_Stop
+                0x00000000003024b4                ___Timer_Deinstall
+                0x00000000003024c4                ___PutKeyCode
+                0x00000000003024d4                ___GetKeyWait
+                0x00000000003024e4                ___ClearKeyBuffer
+                0x00000000003024f4                ___GetVRAMAddress
+ .text          0x0000000000302510        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(tlbh.S.o)
+ .text          0x0000000000302510      0x124 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(iokbd.c.o)
+                0x000000000030251c                _iokbd_row
+                0x0000000000302604                _iokbd_scan
+ .text          0x0000000000302634      0x52c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti.c.o)
+                0x0000000000302634                _bopti_grid
+                0x000000000030286c                _bopti_render
+                0x00000000003029bc                _bopti_render_scsp
+                0x0000000000302abc                _bopti_clip
+ .text          0x0000000000302b60       0x8c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(masks.c.o)
+                0x0000000000302b60                _masks
+ *fill*         0x0000000000302bec        0x4 
+ .text          0x0000000000302bf0       0xc0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(memcpy.s.o)
+                0x0000000000302bf0                _memcpy
+ .text          0x0000000000302cb0        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth-etmu.s.o)
+ .text          0x0000000000302cb0        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth-tmu.s.o)
+ .text          0x0000000000302cb0       0x30 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(cpu.s.o)
+                0x0000000000302cb0                _cpu_setCPUOPM
+                0x0000000000302cc2                _cpu_getCPUOPM
+                0x0000000000302cd4                _cpu_getSR
+                0x0000000000302cda                _cpu_setSR
+ .text          0x0000000000302ce0        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(exch.s.o)
+ .text          0x0000000000302ce0        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth.S.o)
+ .text          0x0000000000302ce0       0x88 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti-asm-gray-scsp.s.o)
+                0x0000000000302ce0                _bopti_gasm_mono_scsp
+                0x0000000000302cfc                _bopti_gasm_mono_alpha_scsp
+                0x0000000000302d1e                _bopti_gasm_gray_scsp
+                0x0000000000302d40                _bopti_gasm_gray_alpha_scsp
+ *fill*         0x0000000000302d68        0x8 
+ .text          0x0000000000302d70      0x150 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti-asm-gray.s.o)
+                0x0000000000302d70                _bopti_gasm_mono
+                0x0000000000302dac                _bopti_gasm_mono_alpha
+                0x0000000000302dfc                _bopti_gasm_gray
+                0x0000000000302e50                _bopti_gasm_gray_alpha
+ .text          0x0000000000302ec0       0x2a /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti-asm-mono-scsp.s.o)
+                0x0000000000302ec0                _bopti_asm_mono_scsp
+                0x0000000000302ed2                _bopti_asm_mono_alpha_scsp
+ .text          0x0000000000302eea       0x58 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti-asm.s.o)
+                0x0000000000302eea                _bopti_asm_mono
+                0x0000000000302f10                _bopti_asm_mono_alpha
+ *fill*         0x0000000000302f42        0x2 
+ .text          0x0000000000302f44      0x1ec /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(exch.c.o)
+                0x00000000003030f4                _gint_panic
+                0x0000000000303104                _gint_panic_set
+                0x0000000000303118                _gint_exc_catch
+                0x0000000000303124                _gint_exc_skip
+ .text          0x0000000000303130       0xbc /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dprint.c.o)
+                0x0000000000303130                _dprint_opt
+                0x000000000030319c                _dprint
+ .text          0x00000000003031ec       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(dtext.c.o)
+                0x00000000003031ec                _dtext
+ .text          0x000000000030320c      0x208 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(topti.c.o)
+                0x000000000030320c                _dfont
+                0x0000000000303224                _topti_glyph_index
+                0x000000000030326c                _topti_offset
+                0x00000000003032c8                _topti_utf8_next
+                0x0000000000303376                _dsize
+ .text          0x0000000000303414      0x3a4 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(topti.c.o)
+                0x00000000003034b6                _topti_render
+                0x00000000003036dc                _dtext_opt
+ .text          0x00000000003037b8      0xcec /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(stdio.c.o)
+                0x00000000003041b4                _kprint_opt
+                0x00000000003042fc                _kprint
+                0x00000000003043dc                _kvsprint
+                0x0000000000304424                _sprintf
+                0x000000000030444c                _vsprintf
+                0x000000000030446c                _snprintf
+                0x000000000030448c                _vsnprintf
+ .text          0x00000000003044a4        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(font5x7.png.o)
+ *fill*         0x00000000003044a4        0xc 
+ .text          0x00000000003044b0      0x130 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(topti-asm.s.o)
+                0x00000000003045c0                _topti_asm_text
+ .text          0x00000000003045e0       0x56 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(memset.s.o)
+                0x00000000003045e0                _memset
+ *fill*         0x0000000000304636        0x2 
+ .text          0x0000000000304638      0x1f0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_udivdi3.o)
+                0x0000000000304638                ___udivdi3
+ .text          0x0000000000304828      0x234 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_umoddi3.o)
+                0x0000000000304828                ___umoddi3
+ .text          0x0000000000304a5c       0x6c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_udivsi3.o)
+                0x0000000000304a7e                ___udivsi3
+ .text          0x0000000000304ac8       0x60 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_udiv_qrnnd_16.o)
+                0x0000000000304ac8                ___udiv_qrnnd_16
+ .text          0x0000000000304b28        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_clz.o)
  *(C P)
 
-.gint.blocks    0x0000000000304b10      0x180
+.gint.blocks    0x0000000000304b30      0x180
  *(.gint.blocks)
- .gint.blocks   0x0000000000304b10       0x80 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth-etmu.s.o)
-                0x0000000000304b10                _inth_etmu4
-                0x0000000000304b70                _inth_etmux
- .gint.blocks   0x0000000000304b90       0x80 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth-tmu.s.o)
-                0x0000000000304b90                _inth_tmu
- .gint.blocks   0x0000000000304c10       0x80 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth.S.o)
-                0x0000000000304c10                _gint_inth_7305
-                0x0000000000304c50                _gint_inth_7705
+ .gint.blocks   0x0000000000304b30       0x80 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth-etmu.s.o)
+                0x0000000000304b30                _inth_etmu4
+                0x0000000000304b90                _inth_etmux
+ .gint.blocks   0x0000000000304bb0       0x80 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth-tmu.s.o)
+                0x0000000000304bb0                _inth_tmu
+ .gint.blocks   0x0000000000304c30       0x80 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(inth.S.o)
+                0x0000000000304c30                _gint_inth_7305
+                0x0000000000304c70                _gint_inth_7705
 
-.gint.drivers   0x0000000000304c90       0xa0
-                0x0000000000304c90                _bdrv = .
+.gint.drivers   0x0000000000304cb0       0xa0
+                0x0000000000304cb0                _bdrv = .
  *(.gint.drivers.0)
  .gint.drivers.0
-                0x0000000000304c90       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(intc.c.o)
-                0x0000000000304c90                _drv_intc
+                0x0000000000304cb0       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(intc.c.o)
+                0x0000000000304cb0                _drv_intc
  *(.gint.drivers.1)
  .gint.drivers.1
-                0x0000000000304cb0       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(cpg.c.o)
-                0x0000000000304cb0                _drv_cpg
+                0x0000000000304cd0       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(cpg.c.o)
+                0x0000000000304cd0                _drv_cpg
  *(.gint.drivers.2)
  .gint.drivers.2
-                0x0000000000304cd0       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(tmu.c.o)
-                0x0000000000304cd0                _drv_tmu
+                0x0000000000304cf0       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(tmu.c.o)
+                0x0000000000304cf0                _drv_tmu
  *(.gint.drivers.3)
  *(.gint.drivers.4)
  .gint.drivers.4
-                0x0000000000304cf0       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(keysc.c.o)
-                0x0000000000304cf0                _drv_keysc
+                0x0000000000304d10       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(keysc.c.o)
+                0x0000000000304d10                _drv_keysc
  *(.gint.drivers.5)
  .gint.drivers.5
-                0x0000000000304d10       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(t6k11.c.o)
-                0x0000000000304d10                _drv_t6k11
+                0x0000000000304d30       0x20 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(t6k11.c.o)
+                0x0000000000304d30                _drv_t6k11
  *(.gint.drivers.6)
-                0x0000000000304d30                _edrv = .
+                0x0000000000304d50                _edrv = .
 
-.rodata         0x0000000000304d30      0x910
+.rodata         0x0000000000304d50      0x910
  *(.rodata.4)
  *(.rodata .rodata.*)
- .rodata        0x0000000000304d30       0xc4 build-fx/assets/img/personnage.png.o
-                0x0000000000304d30                _img_personnage
-                0x0000000000304df4                _img_personnage_end
- .rodata        0x0000000000304df4       0x64 build-fx/assets/img/personnagemarche.png.o
-                0x0000000000304df4                _img_personnagemarche
-                0x0000000000304e58                _img_personnagemarche_end
+ .rodata        0x0000000000304d50       0xc4 build-fx/assets/img/personnage.png.o
+                0x0000000000304d50                _img_personnage
+                0x0000000000304e14                _img_personnage_end
+ .rodata        0x0000000000304e14       0x64 build-fx/assets/img/personnagemarche.png.o
+                0x0000000000304e14                _img_personnagemarche
+                0x0000000000304e78                _img_personnagemarche_end
  .rodata.str1.4
-                0x0000000000304e58        0x6 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(keysc.c.o)
- *fill*         0x0000000000304e5e        0x2 
+                0x0000000000304e78        0x6 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(keysc.c.o)
+ *fill*         0x0000000000304e7e        0x2 
  .rodata.str1.4
-                0x0000000000304e60        0x6 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(t6k11.c.o)
- *fill*         0x0000000000304e66        0x2 
- .rodata        0x0000000000304e68        0xc /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(tmu.c.o)
+                0x0000000000304e80        0x6 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(t6k11.c.o)
+ *fill*         0x0000000000304e86        0x2 
+ .rodata        0x0000000000304e88        0xc /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(tmu.c.o)
  .rodata.str1.4
-                0x0000000000304e74        0x4 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(tmu.c.o)
+                0x0000000000304e94        0x4 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(tmu.c.o)
  .rodata.str1.4
-                0x0000000000304e78        0x4 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(cpg.c.o)
+                0x0000000000304e98        0x4 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(cpg.c.o)
  .rodata.str1.4
-                0x0000000000304e7c        0x5 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(intc.c.o)
- *fill*         0x0000000000304e81        0x3 
- .rodata        0x0000000000304e84       0xe4 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(intc.c.o)
- .rodata        0x0000000000304f68       0x18 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(kernel.c.o)
- .rodata        0x0000000000304f80       0x40 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti.c.o)
+                0x0000000000304e9c        0x5 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(intc.c.o)
+ *fill*         0x0000000000304ea1        0x3 
+ .rodata        0x0000000000304ea4       0xe4 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(intc.c.o)
+ .rodata        0x0000000000304f88       0x18 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(kernel.c.o)
+ .rodata        0x0000000000304fa0       0x40 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(bopti.c.o)
  .rodata.str1.4
-                0x0000000000304fc0      0x126 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(exch.c.o)
+                0x0000000000304fe0      0x126 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(exch.c.o)
                                         0x12a (size before relaxing)
- *fill*         0x00000000003050e6        0x2 
+ *fill*         0x0000000000305106        0x2 
  .rodata.str1.4
-                0x00000000003050e8       0x34 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(stdio.c.o)
+                0x0000000000305108       0x34 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(stdio.c.o)
                                          0x31 (size before relaxing)
- .rodata        0x000000000030511c      0x424 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(font5x7.png.o)
-                0x000000000030511c                _gint_font5x7_data
-                0x0000000000305521                _gint_font5x7_data_end
-                0x0000000000305524                _gint_font5x7
- .rodata        0x0000000000305540      0x100 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_clz.o)
-                0x0000000000305540                ___clz_tab
+ .rodata        0x000000000030513c      0x424 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(font5x7.png.o)
+                0x000000000030513c                _gint_font5x7_data
+                0x0000000000305541                _gint_font5x7_data_end
+                0x0000000000305544                _gint_font5x7
+ .rodata        0x0000000000305560      0x100 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a(_clz.o)
+                0x0000000000305560                ___clz_tab
                 0x0000000008100200                . = ORIGIN (ram)
 
 .bss            0x0000000008100200      0x4f0
@@ -501,8 +501,8 @@ LOAD /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a
  *fill*         0x00000000081006ec        0x4 
                 0x00000000000004f0                _sbss = SIZEOF (.bss)
 
-.data           0x00000000081006f0      0x140 load address 0x0000000000305640
-                0x0000000000305640                _ldata = LOADADDR (.data)
+.data           0x00000000081006f0      0x140 load address 0x0000000000305660
+                0x0000000000305660                _ldata = LOADADDR (.data)
                 0x00000000081006f0                _rdata = .
                 0x00000000081006f0                _lreloc = .
  *(.gint.mappedrel)
@@ -575,16 +575,16 @@ LOAD /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a
                 0x0000000008100830                . = ALIGN (0x10)
  *fill*         0x0000000008100828        0x8 
 
-.stack          0x0000000008100830        0x4 load address 0x0000000000305780
+.stack          0x0000000008100830        0x4 load address 0x00000000003057a0
  .stack         0x0000000008100830        0x4 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(font5x7.png.o)
 
-.data.4         0x0000000008100834        0xc load address 0x0000000000305784
+.data.4         0x0000000008100834        0xc load address 0x00000000003057a4
  *(.data.4)
                 0x0000000008100840                . = ALIGN (0x10)
  *fill*         0x0000000008100834        0xc 
                 0x000000000000014c                _sdata = (SIZEOF (.data) + SIZEOF (.data.4))
 
-.gint.bss       0x0000000008100840      0x230 load address 0x0000000000305784
+.gint.bss       0x0000000008100840      0x230 load address 0x00000000003057a4
  *(.gint.bss .gint.bss.sh3)
  .gint.bss      0x0000000008100840       0x80 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(keysc.c.o)
  .gint.bss      0x00000000081008c0        0x2 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(t6k11.c.o)
@@ -600,22 +600,22 @@ LOAD /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a
                 0x0000000000000230                _sgbss = SIZEOF (.gint.bss)
                 0x00000000e5200000                . = ORIGIN (ilram)
 
-.ilram          0x00000000e5200000        0x0 load address 0x0000000000305784
-                0x0000000000305784                _lilram = LOADADDR (.ilram)
+.ilram          0x00000000e5200000        0x0 load address 0x00000000003057a4
+                0x00000000003057a4                _lilram = LOADADDR (.ilram)
                 0x00000000e5200000                _rilram = .
  *(.ilram)
                 0x00000000e5200000                . = ALIGN (0x10)
                 0x00000000e5007000                . = ORIGIN (xram)
 
-.xram           0x00000000e5007000        0x0 load address 0x0000000000305784
-                0x0000000000305784                _lxram = LOADADDR (.xram)
+.xram           0x00000000e5007000        0x0 load address 0x00000000003057a4
+                0x00000000003057a4                _lxram = LOADADDR (.xram)
                 0x00000000e5007000                _rxram = .
  *(.xram)
                 0x00000000e5007000                . = ALIGN (0x10)
                 0x00000000e5017000                . = ORIGIN (yram)
 
-.yram           0x00000000e5017000        0x0 load address 0x0000000000305784
-                0x0000000000305784                _lyram = LOADADDR (.yram)
+.yram           0x00000000e5017000        0x0 load address 0x00000000003057a4
+                0x00000000003057a4                _lyram = LOADADDR (.yram)
                 0x00000000e5017000                _ryram = .
  *(.yram)
                 0x00000000e5017000                . = ALIGN (0x10)
@@ -624,8 +624,8 @@ LOAD /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a
                 0x0000000000000000                _syram = SIZEOF (.yram)
                 0x0000000000000000                . = ORIGIN (rram)
 
-.gint.mapped    0x0000000000000000       0xa0 load address 0x0000000000305784
-                0x0000000000305784                _lgmapped = LOADADDR (.gint.mapped)
+.gint.mapped    0x0000000000000000       0xa0 load address 0x00000000003057a4
+                0x00000000003057a4                _lgmapped = LOADADDR (.gint.mapped)
  *(.gint.mapped)
  .gint.mapped   0x0000000000000000       0x2c /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(cpu.s.o)
  *fill*         0x000000000000002c        0x4 
@@ -633,7 +633,7 @@ LOAD /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgcc.a
                 0x00000000000000a0                . = ALIGN (0x10)
                 0x00000000000000a0                _sgmapped = SIZEOF (.gint.mapped)
 
-.rela.dyn       0x00000000000000a0        0x0 load address 0x0000000000305824
+.rela.dyn       0x00000000000000a0        0x0 load address 0x0000000000305844
  .rela.text.entry
                 0x00000000000000a0        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(start.c.o)
  .rela.text     0x00000000000000a0        0x0 /root/opt/casio/sh-elf-2.32-9.2.0/lib/gcc/sh3eb-elf/9.3.0/libgint-fx.a(start.c.o)
