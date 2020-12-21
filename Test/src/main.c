@@ -28,10 +28,12 @@ int main(void)
 			marche--;
 		}
 	       /* Lecture des entrées */
+	       clearevents();
+	       
 	       key = getkey_opt(GETKEY_DEFAULT, &timeout).key;
-	       if(key == KEY_EXE)
+	       if(keydown(KEY_EXE))
                        a = 1;
-	       if(key == KEY_RIGHT)
+	       if(keydown(KEY_RIGHT) && marche == 0)
 	       {
 		       marche = 5;
 	               inAnimation = 1;
