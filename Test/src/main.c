@@ -10,7 +10,7 @@ int main(void)
 	int x = 0;
 	int key;
 	int inAnimation = 0;
-	int marche = 0;
+	int marche = -5;
 	int timeout = 1;
 
 	while(a != 1)
@@ -18,32 +18,41 @@ int main(void)
 
 
 		        /* Affichage */
+		if(marche<0)
+	        {
+                        dclear(C_WHITE);
+		        dimage(x,40,&img_personnage);
+		        dupdate();
+	        }
+                else
+	        {		
 	   	dclear(C_WHITE);
 	        dimage(x,40,marche ? &img_personnagemarche : &img_personnage);
                 dupdate();
-
-                /* Réinitialisation des infos du frame précédent */
-	        if(marche > 0)
-		{
+                }
+		if(marche>-5)
 			marche--;
-		}
 	       /* Lecture des entrées */
 	       clearevents();
 	       
 	       key = getkey_opt(GETKEY_DEFAULT, &timeout).key;
 	       if(keydown(KEY_EXE))
                        a = 1;
-	       if(keydown(KEY_RIGHT) && marche == 0)
+	       if(keydown(KEY_RIGHT) && marche == -5)
 	       {
 		       marche = 5;
 	               inAnimation = 1;
                }
 	       /* Simulation du monde */
-	       if(marche==0 && inAnimation == 1)
+	       if(marche>0)
 	       {
-		       x = x+3;
-	               inAnimation = 0;
-               }
+		       
+		       if(marche == -5 && inAnimation == 1)
+		       {
+			       inAnimation = 0;
+		               x=x+1;
+                       }
+	       }
 	       /* Délai */
 	       sleep_us(25000);
 	       if(x >= 140)
