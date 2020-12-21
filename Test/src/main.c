@@ -17,7 +17,9 @@ int main(void)
 	{
 
 
-		        /* Affichage */
+		/* Affichage */
+	        if(x >= 140)
+		        x = 0;
 		if(marche<0)
 	        {
                         dclear(C_WHITE);
@@ -30,8 +32,7 @@ int main(void)
 	        dimage(x,40,marche ? &img_personnagemarche : &img_personnage);
                 dupdate();
                 }
-		if(marche>-5)
-			marche--;
+		
 	       /* Lecture des entrées */
 	       clearevents();
 	       
@@ -43,6 +44,9 @@ int main(void)
 		       marche = 5;
 	               inAnimation = 1;
                }
+	       /*Changement de frame*/
+               if(marche>-5)
+		       marche--;
 	       /* Simulation du monde */
 	       if(marche>0)
 	       {
@@ -55,8 +59,6 @@ int main(void)
 	       }
 	       /* Délai */
 	       sleep_us(25000);
-	       if(x >= 140)
-		       x = 0;
 	       
 	}
 	getkey();
